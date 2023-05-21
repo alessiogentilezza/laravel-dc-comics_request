@@ -33,4 +33,12 @@ class UpdateComicRequest extends FormRequest
             'type' => 'required|max:30',
         ];
     }
+    public function messages()
+    {
+        return [
+            // 'title.required' => "Il campo Titolo è obbligatorio",
+            // 'title.max' => "Il campo Titolo può contenere al massimo 255 caratteri",
+        ];
+    }
+
 }
